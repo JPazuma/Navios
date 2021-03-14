@@ -33,5 +33,18 @@ public class Porto {
         for(int i = 0; i < naviosPortaContentores.size(); i++){
             resultado += naviosPortaContentores.get(i).getNumMaxContentores();
         }
+        return resultado;
+    }
+    
+    public float capacidadeTotal(){
+        float resultado = 0;
+        for(int i = 0; i < naviosPortaContentores.size(); i++){
+            resultado += naviosPortaContentores.get(i).getNumMaxContentores();
+        }
+        resultado *=10;
+        for(int i =0; i> naviosPetroleiro.size(); i++){
+            resultado += naviosPetroleiro.get(i).getCapCarga();
+        }
+        return resultado;
     }
 }
